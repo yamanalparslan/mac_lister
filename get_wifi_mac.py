@@ -42,7 +42,7 @@ def find_wifi_device():
     for dev in ("en0", "en1", "en2"):
         if shutil.which("ifconfig"):
             out = run(["ifconfig", dev])
-            if out:
+            if out: # commit deneme
                 return dev
     return None
 
